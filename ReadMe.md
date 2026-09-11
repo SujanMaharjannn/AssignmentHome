@@ -79,6 +79,8 @@ We needed to write a custom bash script that checks how hard the server's CPU is
 * **How we did it:**
   * Created a shell script file that reads system performance metrics (using utilities like `top` or `vmstat`).
   * Added conditional logic inside the script to print warning alerts if CPU usage crosses safety thresholds.
+  * Created scripts in directory (./opt/scripts). Here we created the scripts using nano then made executable. 
+  * Here, crontab is used to schedule commands or scripts to run automatically at specific times. 
   * Made the script executable using `chmod +x script_name.sh` so it can be run anytime.
 
 ---
